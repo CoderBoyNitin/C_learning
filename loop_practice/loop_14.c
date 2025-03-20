@@ -19,7 +19,7 @@ int main()
             printf("%d", t++);
         }
 
-        printf(" \n");
+        printf("\n");
         spc--;
     }
 
