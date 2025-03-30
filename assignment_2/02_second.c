@@ -1,24 +1,31 @@
-#include <stdio.h>
+#include <stdio.h> 
 
-int main()
-{
-    int number;
-    // Ask the user for input
-    printf("Enter a number: ");
-    scanf("%d", &number);
-    // Outer if-else
-    if (number > 0)
+void main(){
+    int num,i,ctr,stno,enno;
+
+    printf("Input starting number of range: ");
+    scanf("%d",&stno); 
+
+    printf("Input ending number of range : "); 
+    scanf("%d",&enno); 
+
+    printf("The prime numbers between %d and %d are : \n",stno,enno); 
+
+    for(num = stno; num <= enno; num++)
     {
-        printf("The number is positive.\n");
-    }
+        ctr = 0; 
 
-    else if (number < 0)
-    {
-        printf("The number is negative.\n");
-    }
+        for(i = 2; i <= num/2; i++) 
+        {
+            if(num % i == 0) 
+            {
+                ctr++;
+                break; 
+            }
+        }
 
-    else {
-        printf("not a number");
-}
-    return 0;
+        if(ctr == 0 && num != 1) 
+            printf("%d ",num); 
+    }
+    printf("\n"); 
 }
