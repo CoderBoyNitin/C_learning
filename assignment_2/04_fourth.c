@@ -1,25 +1,25 @@
 #include <stdio.h>
 
-
-int gcd(int a, int b) {
-    for (; b != 0; ) {
-        int temp = b;
-        b = a % b;
-        a = temp;
-    }
-    return a;
-}
-
 int main() {
-    int num1, num2;
-    
-   
+    int num1, num2, gcd;
+
+    // Taking input from the user
     printf("Enter two numbers: ");
     scanf("%d %d", &num1, &num2);
 
-    
-    int result = gcd(num1, num2);
-    printf("GCD of %d and %d is %d\n", num1, num2, result);
-    
+    // Using Euclidean algorithm with a for loop
+    for (;;) {
+        if (num2 == 0) {
+            gcd = num1;
+            break;
+        }
+        int temp = num2;
+        num2 = num1 % num2;
+        num1 = temp;
+    }
+
+    // Displaying the result
+    printf("GCD is %d\n", gcd);
+
     return 0;
 }

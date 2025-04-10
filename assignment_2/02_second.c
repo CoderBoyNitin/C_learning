@@ -1,31 +1,16 @@
-#include <stdio.h> 
+#include<stdio.h>
 
-void main(){
-    int num,i,ctr,stno,enno;
+int main(){
+    int n,num;
+    printf("enter number : ");
+    scanf("%d", &n);
 
-    printf("Input starting number of range: ");
-    scanf("%d",&stno); 
+    
 
-    printf("Input ending number of range : "); 
-    scanf("%d",&enno); 
-
-    printf("The prime numbers between %d and %d are : \n",stno,enno); 
-
-    for(num = stno; num <= enno; num++)
+    for (int i = 2; i <= n; i++)
     {
-        ctr = 0; 
-
-        for(i = 2; i <= num/2; i++) 
-        {
-            if(num % i == 0) 
-            {
-                ctr++;
-                break; 
-            }
-        }
-
-        if(ctr == 0 && num != 1) 
-            printf("%d ",num); 
+     if( num % i == 0);
     }
-    printf("\n"); 
+    
+    return 0;
 }
