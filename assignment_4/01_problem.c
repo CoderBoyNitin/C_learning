@@ -33,8 +33,8 @@ int main(){
     }
   }
   
-    printf("the maximum arrays from the given arrays is  %d\n", max);
-    printf("the minimum arrays from the given arrays is  %d\n", min);
+    printf("the maximum arrays from the given arrays is : %d \n", max);
+    printf("the minimum arrays from the given arrays is : %d \n", min);
 
     printf("\n");
 
