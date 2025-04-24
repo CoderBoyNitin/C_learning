@@ -21,8 +21,7 @@ int main(){
 
   for ( i = 0; i < n; i++)
   {
-    for (int i = 0; i < n; i++)
-    {
+    
         if(arr[i] > max){
             max = arr[i];
         }
@@ -30,7 +29,7 @@ int main(){
         if(arr[i] < min){
             min = arr[i];
         }
-    }
+    
   }
   
     printf("the maximum arrays from the given arrays is : %d \n", max);
