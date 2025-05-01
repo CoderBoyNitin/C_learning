@@ -1,0 +1,1 @@
+// write a c program which takes an integer from the keyboard and display it in words for example 235, changes to two three five
